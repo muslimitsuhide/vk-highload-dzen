@@ -24,18 +24,18 @@
 - Шеринг.
 
 ### Целевая аудитория:
-По данным ***[Mediascope](https://mediascope.net/data/)***, аудитория Дзена в России составляет **81 млн человек** в месяц. Дзен охватывает 67.5% населения России. 26.4% россиян используют Дзен каждый день. Это примерно 31 млн пользователей. 
+По данным ***Mediascope[^1]***, аудитория Дзена в России составляет **81 млн человек** в месяц. Дзен охватывает 67.5% населения России. 26.4% россиян используют Дзен каждый день. Это примерно 31 млн пользователей. 
 
 - MAU: 81М 
 - DAU: 32М
 
 ![Аудитория Дзена](img/stat.png)
 
-По данным ***[Similarweb](https://pro.similarweb.com/#/digitalsuite/websiteanalysis/overview/website-performance/*/999/3m?webSource=Total&key=dzen.ru)***, 90.98% мирового трафика Дзена приходится на Россию. Второе место занимает Беларусь с 1.95%, третье — Казахстан с 1.23%.
+По данным ***Similarweb[^2]***, 90.98% мирового трафика Дзена приходится на Россию. Второе место занимает Беларусь с 1.95%, третье — Казахстан с 1.23%.
 
 ![Трафик Дзена](img/top.png)
 
 ### Список используемых источников <a name="2"></a>:
-[^1]: [Аналитика Яндекс.Дзен с Similarweb](https://pro.similarweb.com/#/digitalsuite/websiteanalysis/overview/website-performance/*/999/3m?webSource=Total&key=dzen.ru)
+[^1]: [Аналитика Яндекс.Дзен с Mediascope](https://mediascope.net/data/)
 
-[^2]: [Аналитика Яндекс.Дзен с Mediascope](https://mediascope.net/data/)
+[^2]: [Аналитика Яндекс.Дзен с Similarweb](https://pro.similarweb.com/#/digitalsuite/websiteanalysis/overview/website-performance/*/999/3m?webSource=Total&key=dzen.ru)
