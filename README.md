@@ -36,6 +36,6 @@
 ![Трафик Дзена](img/top.png)
 
 ### Список используемых источников <a name="2"></a>:
-[^1]: [Аналитика Яндекс.Дзен с Mediascope](https://mediascope.net/data/)
+[^1]: [Аналитика Дзена с Mediascope](https://mediascope.net/data/)
 
-[^2]: [Аналитика Яндекс.Дзен с Similarweb](https://pro.similarweb.com/#/digitalsuite/websiteanalysis/overview/website-performance/*/999/3m?webSource=Total&key=dzen.ru)
+[^2]: [Аналитика Дзена с Similarweb](https://pro.similarweb.com/#/digitalsuite/websiteanalysis/overview/website-performance/*/999/3m?webSource=Total&key=dzen.ru)
