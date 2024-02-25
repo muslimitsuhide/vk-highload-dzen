@@ -71,6 +71,6 @@
 
 [^2]: [Аналитика Дзена с Similarweb](https://pro.similarweb.com/#/digitalsuite/websiteanalysis/overview/website-performance/*/999/3m?webSource=Total&key=dzen.ru)
 
-[^3] [Самый длинный номер телефона в мире](https://fsnslnr.su/faq/kakoi-samyi-dlinnyi-nomer-telefona-v-mire)
+[^3]: [Самый длинный номер телефона в мире](https://fsnslnr.su/faq/kakoi-samyi-dlinnyi-nomer-telefona-v-mire)
 
-[^4] [Длина почтового адреса](https://habr.com/ru/articles/274985/comments/#comment_8737021)
+[^4]: [Длина почтового адреса](https://habr.com/ru/articles/274985/comments/#comment_8737021)
