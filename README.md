@@ -280,12 +280,29 @@ Nginx вместе с Kubernetes могут обеспечить высокую 
 |5|post_finish_reading_metric, article_finish_reading_metric, post_action_metric, article_action_metric, video_action_metric, post_comment_metric, article_comment_metric, video_comment_metric|PostgreSQL|Таблицы, связанные с подобными метриками, часто требуют сложных запросов, включая агрегации и фильтрацию. PostgreSQL обеспечивает сложных запросов, что удобно для анализа данных.|
 |6|   post_grade, post_comment, article_grade, article_comment, video_grade, video_comment|MongoDB|MongoDB удобно использовать для хранения коллекций данных с переменной структурой, таких как оценки пользователей, где каждая запись может содержать разное количество идентификаторов объектов и оценок.|
 
+### Индексы
+
+Для более быстрого доступа к данным будем использовать индексы:
+
+- Для таблиц user, channel, subscription, post, article, video, moderation - id;
+
+- Для таблиц post_finish_reading_metric, post_action_metric, post_comment_metric,  post_grade, post_comment - по полю post_id;
+
+- Для таблиц video_action_metric, video_comment_metric, video_grade, video_comment - по полю video_id;
+
+- Для таблиц article_finish_reading_metric, article_action_metric, article_comment_metric article_comment, article_grade - по полю article_id;
+
+- Таблицы, которые хранятся в MongoDB в виде key-value не нуждается в индексах.
+
 ### Шардинг 
-- Таблица user содержит очень много записей, поэтому ее лучше шардировать по индификатору пользователей **user_id**. Разделим наших пользователей на несколько групп и будем хранить их на разных узлах. Распределять по шардам будем с помощью остатка от деления на количество шардов (возьмем, например, 16 шардов).
+
+- Для таблиц post_finish_reading_metric, post_action_metric, post_comment_metric,  post_grade, post_comment, video_action_metric, video_comment_metric, video_grade, video_comment, article_finish_reading_metric, article_action_metric, article_comment_metric article_comment, article_grade применим шардирвоние по **user_id**.
+
+- Таблица user содержит очень много записей, поэтому ее лучше тоже шардировать по индификатору пользователей **user_id**. Разделим наших пользователей на несколько групп и будем хранить их на разных узлах. Распределять по шардам будем с помощью остатка от деления на количество шардов (возьмем, например, 16 шардов).
 
 - Таблицы post, article, video содержат посты, статьи и видео, созданные пользователями. Шардинг можно применить здесь так же по полю, связанному с пользователем **channel_id**.
 
-- Таблицы **subscription, post_comment, article_comment, video_comment, post_grade, article_grade, video_grade** содержат информацию о взаимодействиях пользователей с контентом. Можно применить шардинг по идентификатору сущности, к которой относится взаимодействие (**post_id, article_id, video_id**). Каждый шард будет содержать данные только для определенного диапазона идентификаторов, что позволит более равномерно распределить нагрузку между узлами.
+- Таблицы **post_comment, article_comment, video_comment, post_grade, article_grade, video_grade** содержат информацию о взаимодействиях пользователей с контентом. Можно применить шардинг по идентификатору сущности, к которой относится взаимодействие (**post_id, article_id, video_id**). Каждый шард будет содержать данные только для определенного диапазона идентификаторов, что позволит более равномерно распределить нагрузку между узлами.
 
 ## Часть 7. Алгоритмы <a name="7"></a>
 
