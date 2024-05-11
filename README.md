@@ -292,7 +292,7 @@ Nginx вместе с Kubernetes могут обеспечить высокую 
 |5|post_finish_reading_metric, article_finish_reading_metric, post_action_metric, article_action_metric, video_action_metric, post_comment_metric, article_comment_metric, video_comment_metric, ad_action_metric|Cassandra|Обладает высокой масштабируемостью и может легко обрабатывать большие объемы данных на нескольких узлах.|
 |6|   post_grade, post_comment, article_grade, article_comment, video_grade, video_comment|MongoDB|MongoDB удобно использовать для хранения коллекций данных с переменной структурой, таких как оценки пользователей, где каждая запись может содержать разное количество идентификаторов объектов и оценок.|
 
-СУБД Chroma будем использовать для хранения эмбеддингов для рекомендаций.
+СУБД Chroma будем использовать для хранения эмбеддингов для рекомендаций и рекламы.
 
 ### Индексы
 
