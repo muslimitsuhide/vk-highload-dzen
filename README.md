@@ -616,4 +616,4 @@ Processes* (вероятностная модель, которая исполь
 
 [^10]: [Рекламные трафареты в поиске аукционы и алгоритмы](https://www.youtube.com/watch?v=wyDy_Dms51w&ab_channel=YandexforDevelopers)
 
-[^11]: [Технологии. Матрикснет](https://yandex.ru/company/technologies/matrixnet/)
+[^11]: [Рекламные трафареты в поиске аукционы и алгоритмы](https://yandex.ru/company/technologies/matrixnet/)
