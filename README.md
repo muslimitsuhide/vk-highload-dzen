@@ -3,6 +3,10 @@
 
 ***Автор:*** Мамадаев Муслим ([Telegram](https://t.me/muslimitsuhide), [VK](https://vk.com/muslimitsuhide))
 
+[Методические указания](https://github.com/init/highload/blob/main/homework_architecture.md)
+
+[Презентация](./presentation/dzen.pptx)
+
 ---
 
 #### Содержание:
@@ -514,7 +518,7 @@ Processes* (вероятностная модель, которая исполь
 
 Дзен имеет на своем пике 175 332 RPS и 44.5 Гбит/сек сетевого трафика (данные берем из раздела [Расчёт нагрузки](#2))
 
-Учитывая данные с сайта nginx:
+Учитывая данные с сайта nginx[^12]:
 
 ![Nginx](img/nginx.png)
 
@@ -576,7 +580,7 @@ Processes* (вероятностная модель, которая исполь
 
 ### Итоги
 
-Рассчитаем цену всего оборудования, если покупать его:
+Рассчитаем цену всего оборудования, если покупать его[^13]:
 
 `6 019.68 * 45 + 1 710.45 * 12 + 1 677.53 * 3 = €314 503`
 
@@ -620,3 +624,7 @@ Processes* (вероятностная модель, которая исполь
 [^10]: [Рекламные трафареты в поиске аукционы и алгоритмы](https://www.youtube.com/watch?v=wyDy_Dms51w&ab_channel=YandexforDevelopers)
 
 [^11]: [Технологии. Матрикснет](https://yandex.ru/company/technologies/matrixnet/)
+
+[^12]: [Testing the Performance of NGINX and NGINX Plus Web Servers](https://www.nginx.com/blog/testing-the-performance-of-nginx-and-nginx-plus-web-servers)
+
+[^13]: [Конфигуратор дешевых серверов supermicro](https://www.broadberry.eu/rackmount-servers)
